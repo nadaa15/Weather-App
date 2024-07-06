@@ -21,7 +21,7 @@ function getYourLocation() {
 
  async function getLocation(latitude, longitude) {
    let response = await fetch(
-     `http://api.weatherapi.com/v1/forecast.json?key=a58468905bbb4a52ba365432241804&q=${latitude},${longitude}&days=3`
+     `https://api.weatherapi.com/v1/forecast.json?key=a58468905bbb4a52ba365432241804&q=${latitude},${longitude}&days=3`
    );
    let data = await response.json();
    result = data;
@@ -38,7 +38,7 @@ searchInput.addEventListener("input", function () {
 getLocation()
   async function getWeather(term) {
     let response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=a58468905bbb4a52ba365432241804&q=${term}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=a58468905bbb4a52ba365432241804&q=${term}&days=3`
     );
     let data = await response.json();
     result = data;
