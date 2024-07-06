@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: #1e202b;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+}
+p{
+    margin: 0;
+}
+.navbar .logo-text p:nth-child(2){
+font-size: 10px;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-toggler
+{
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 5px 25px;
+    font-size: 14px;
+    transition: all 400ms;
+}
+.navbar-light .navbar-toggler-icon{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-toggler:hover{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+.navbar-nav .nav-item{
+    margin-inline: 8px;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.hero{
+    min-height: 350px;
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-input {
+    width: 100%;
+    padding:15px;
+    color: #212529;
+    background-color: #1e202b;
+    border: 1px solid #1e202b;
+    border-radius: 30px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+form button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.forcast-header{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.forcast-header p{
+    font-size: 14px;
+    color: #BFC1C8;
+}
+.forcast-content p:nth-child(1){
+    font-size: 18px;
+    color: #BFC1C8;
+}
+.today .degree-num{
+    font-size: 85px;
+    color: white;
+    font-weight: 700;
+}
+.today .forcast-content .degree{
+    display: flex;
+    align-items: center;
+}
+.today span{
+    color: #BFC1C8;
+    margin: 5px;
+}
+.forcast-table .container{
+    position: relative;
+    top: -100px;
+    background-color: #323544;
+    border-radius: 15px;
+    padding: 0;
+}
+.forcast-table .forcast{
+    background-color: #262936;
+}
+p.min-temp{
+    color: #BFC1C8;
+}
+p.blue{
+    font-size: 14px;
+    color: #009ad8;
+}
+
+
+footer{
+    background-color: #262936;
+    padding-block:70px ;
+}
+.contact form{
+    width: 65%;
+}
+footer .contact{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+footer .contact-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    padding: 10px;
+}
+footer .contact-icons a:hover{
+    background: #009ad8;
+    color: white;
+}
+footer p{
+    color: #BFC1C8;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) {
+    .today .forcast-content .degree {
+            display: block;
+        }
+}
